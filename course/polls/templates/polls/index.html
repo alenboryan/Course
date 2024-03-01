@@ -1,0 +1,11 @@
+{% extends 'polls/layout.html' %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+  <ul>
+    {% for rate in courses_ordered_by_rating %}
+    <li>{{ rate }}</li>
+  </ul>
+{% endblock %}

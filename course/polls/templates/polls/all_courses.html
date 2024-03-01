@@ -1,0 +1,13 @@
+{% extends 'polls/layout.html' %}
+
+{% block title %}
+  <h1>All Courses</h1>
+{% endblock %}
+
+{% block content %}
+  <ul>
+    {% for course in all_title %}
+    <li>{{ course }}</li>
+    {%endfor%}
+{% endblock %}
+

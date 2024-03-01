@@ -1,0 +1,9 @@
+<ul>
+    {% for course in all_courses %}
+      <li>
+        <a href="{% url 'course_detail' pk=course.pk %}">{{ course.Title }}</a> - 
+        Rate: {{ course.Rate }}
+      </li>
+    {% endfor %}
+  </ul>
+  
