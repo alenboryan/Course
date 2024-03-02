@@ -1,10 +1,10 @@
 body{
-    background: #3f7388;
+    background: #4c678a;
 }
 
 aside{
     float: left;
-    background:#bb5b5b;
+    background:#9faae7;
     width: 13%;
     height: 100vh;
     color: #fff;
@@ -34,7 +34,7 @@ aside ul li{
     transition: transform  .6s ease;
 }
 aside ul li:hover,aside ul a:hover {
-        color: rgb(34, 204, 63);
+        color: rgb(112, 114, 113);
         transform: scale(1.05);
         text-decoration: underline;
 }
