@@ -1,0 +1,17 @@
+{% extends 'polls/layout.html' %}
+
+{% block title %}Add Course{% endblock %}
+
+{% block content %}
+  <div class="features">
+    <h1>Add Course</h1>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.title }}
+      {{ form.description }}
+      {{ form.rate }}
+      {{ form.count }}
+      <button class="btn btn-success" type="submit">Add Course</button>
+    </form>
+  </div>
+{% endblock %}

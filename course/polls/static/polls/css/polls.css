@@ -1,0 +1,53 @@
+body{
+    background: #3f7388;
+}
+
+aside{
+    float: left;
+    background:#bb5b5b;
+    width: 13%;
+    height: 100vh;
+    color: #fff;
+    border-right: 8px solid #4d4d4d;
+
+}
+
+aside img{
+    width: 50px;
+    float: left;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+aside .Logo{
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+}
+aside ul{list-style:none}
+aside ul li{
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    transition: transform  .6s ease;
+}
+aside ul li:hover,aside ul a:hover {
+        color: rgb(34, 204, 63);
+        transform: scale(1.05);
+        text-decoration: underline;
+}
+main .features{
+    float: left;
+    color: #fff;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+
+form{
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
+}
