@@ -1,9 +1,17 @@
-<ul>
-    {% for course in all_courses %}
+{% extends 'polls/layout.html' %}
+{% block title %}Course Detail{% endblock %}
+
+{% block content %}
+    <h1>Course Details</h1>
+
+    {% for course in all_info %}
       <li>
-        <a href="{% url 'course_detail' pk=course.pk %}">{{ course.Title }}</a> - 
-        Rate: {{ course.Rate }}
+        <h2>{{ course.title }}</h2>
+        <p>Description: {{ course.description }}</p>
+        <p>Rate: {{ course.rate }}</p>
+        <p>Count: {{ course.count }}</p>
       </li>
     {% endfor %}
-  </ul>
-  
+
+    <a href="{% url 'index' %}">Back to All Courses</a>
+{% endblock %}

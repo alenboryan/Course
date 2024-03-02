@@ -1,5 +1,4 @@
 {% extends 'polls/layout.html' %}
-
 {% block title %}
   <h1>All Courses</h1>
 {% endblock %}
@@ -7,7 +6,12 @@
 {% block content %}
   <ul>
     {% for course in all_title %}
-    <li>{{ course }}</li>
-    {%endfor%}
+      <li>
+        <h2>{{ course.title }}</h2>
+        <p>Rate: {{ course.rate }}</p>
+      </li>
+    {% endfor %}
+  </ul>
 {% endblock %}
+
 

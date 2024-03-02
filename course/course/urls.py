@@ -5,5 +5,4 @@ urlpatterns = [
     path('polls/', include('polls.urls')),
     path('', include('polls.urls')), # Include the polls app's URLs for the empty path
     path('admin/', admin.site.urls),
-
 ]
